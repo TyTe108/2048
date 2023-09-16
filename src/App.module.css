@@ -1,0 +1,83 @@
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #fafafa;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.scoreBoard {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #333;
+  animation: appear 0.3s ease;
+}
+
+.score {
+  font-weight: bold;
+  color: #f44242;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.winMessage,
+.loseMessage {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  animation: appear 1s ease-out;
+}
+
+.winMessage {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.loseMessage {
+  background-color: #f44336;
+  color: white;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.restartButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.restartButton:hover {
+  background-color: #555;
+}

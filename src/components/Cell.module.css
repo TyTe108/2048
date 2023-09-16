@@ -1,0 +1,82 @@
+.cell {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .cell[data-value='2'] {
+    background-color: #f4e242;
+    animation: appear 0.3s ease;
+  }
+  
+  .cell[data-value='4'] {
+    background-color: #f4b942;
+    animation: appear 0.3s ease;
+  }
+  
+  .cell[data-value='8'] {
+    background-color: #f48c42;
+    animation: appear 0.3s ease;
+  }
+  
+  .cell[data-value='16'] {
+    background-color: #f44242;
+    animation: appear 0.3s ease;
+  }
+  
+  .cell[data-value='32'] {
+    background-color: #42f465;
+    animation: appear 0.3s ease;
+  }
+  
+  .cell[data-value='64'] {
+    background-color: #42f4e9;
+    animation: appear 0.3s ease;
+  }
+  
+  .cell[data-value='128'] {
+    background-color: #4287f4;
+    animation: appear 0.3s ease;
+  }
+  
+  .cell[data-value='256'] {
+    background-color: #8a42f4;
+    animation: appear 0.3s ease;
+  }
+  
+  .cell[data-value='512'] {
+    background-color: #f442f1;
+    animation: appear 0.3s ease;
+  }
+  
+  .cell[data-value='1024'] {
+    background-color: #f4429d;
+    animation: appear 0.3s ease;
+  }
+  
+  .cell[data-value='2048'] {
+    background-color: #9d42f4;
+    animation: appear 0.3s ease;
+  }
+  
+  @keyframes appear {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  

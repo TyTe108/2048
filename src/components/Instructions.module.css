@@ -1,0 +1,30 @@
+.instructionsContainer {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .list li {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .key, .merge, .goal {
+    font-weight: bold;
+    color: #007bff;
+  }
